@@ -1,0 +1,57 @@
+a
+<!DOCTYPE html>
+<html lang="ja">
+
+<meta charset="UTF-8">
+<title>自己紹介</title>
+</head>
+
+<body>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+    <p>名前：山田太郎</p>
+    <p>年齢：25歳</p>
+    <p>出身地：東京都</p>
+    <p>趣味：プログラミング、読書</p>
+
+    <h2>好きなもの</h2>
+    <ul>
+        <li>ラーメン</li>
+        <li>カレー</li>
+        <li>寿司</li>
+    </ul>
+    <h2>今年の目標</h2>
+    <ol>
+        <li>Laravelをマスターする</li>
+        <li>毎日コードを書く</li>
+        <li>ポートフォリオを作成する</li>
+    </ol>
+    <h2>リンク</h2>
+    <a href="https://github.com/shun-19980928/my-first-git">私のGitHab</a>
+    <h2>好きな風景</h2>
+    <img src="landscape.jpg" art="好きな風景" width="400">
+    <h2>お問い合わせ</h2>
+<form action="/submit" method="POST">
+    <div>
+        <label for="contact-name">お名前:</label>
+        <input type="text" id="contact-name" name="name" required>
+    </div>
+    <div>
+        <label for="contact-category">お問い合わせ種別:</label>
+        <select id="contact-category" name="category">
+            <option value="">-- 選択してください --</option>
+            <option value="general">一般的なお問い合わせ</option>
+            <option value="feedback">ご意見・ご要望</option>
+        </select>
+    </div>
+    <div>
+        <label for="contact-message">お問い合わせ内容:</label>
+        <textarea id="contact-message" name="message" rows="5" required></textarea>
+    </div>
+    <div>
+        <button type="submit">送信する</button>
+    </div>
+</form>
+</body>
+
+</html>
